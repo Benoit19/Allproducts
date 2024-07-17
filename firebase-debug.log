@@ -1,0 +1,163 @@
+[debug] [2024-06-24T13:56:24.620Z] ----------------------------------------------------------------------
+[debug] [2024-06-24T13:56:24.622Z] Command:       C:\Program Files\nodejs\node.exe C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:dev_deploy
+[debug] [2024-06-24T13:56:24.622Z] CLI Version:   9.23.0
+[debug] [2024-06-24T13:56:24.622Z] Platform:      win32
+[debug] [2024-06-24T13:56:24.622Z] Node Version:  v14.18.1
+[debug] [2024-06-24T13:56:24.633Z] Time:          Mon Jun 24 2024 13:56:24 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-06-24T13:56:24.633Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-24T13:56:24.642Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-24T13:56:24.710Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-24T13:56:24.710Z] > authorizing via signed-in user (zoglikofibenoit@gmail.com)
+[debug] [2024-06-24T13:56:24.710Z] [iam] checking project dollarstoremobile for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-24T13:56:24.711Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2024-06-24T13:56:24.711Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T13:56:25.262Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 24 Jun 2024 13:56:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T13:56:25.263Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dollarstoremobile:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-24T13:56:25.521Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-24T13:56:25.521Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-06-24T13:56:26.558Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 24 Jun 2024 13:56:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1009","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T13:56:26.559Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-06-24T13:56:26.561Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T13:56:26.563Z] > refreshing access token with scopes: []
+[debug] [2024-06-24T13:56:26.563Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T13:56:26.957Z] <<< HTTP RESPONSE 400 {"date":"Mon, 24 Jun 2024 13:56:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T13:56:26.959Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile [none]
+[debug] [2024-06-24T13:56:27.351Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile 401
+[debug] [2024-06-24T13:56:27.351Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-06-24T13:56:27.351Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T13:56:27.716Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project dollarstoremobile. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-06-24T14:01:00.394Z] ----------------------------------------------------------------------
+[debug] [2024-06-24T14:01:00.396Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:dev_deploy
+[debug] [2024-06-24T14:01:00.396Z] CLI Version:   9.4.0
+[debug] [2024-06-24T14:01:00.396Z] Platform:      win32
+[debug] [2024-06-24T14:01:00.396Z] Node Version:  v14.18.1
+[debug] [2024-06-24T14:01:00.396Z] Time:          Mon Jun 24 2024 14:01:00 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-06-24T14:01:00.397Z] ----------------------------------------------------------------------
+[debug] [2024-06-24T14:01:00.397Z] 
+[debug] [2024-06-24T14:01:00.427Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-24T14:01:00.427Z] > authorizing via signed-in user
+[debug] [2024-06-24T14:01:00.427Z] [iam] checking project dollarstoremobile for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-24T14:01:00.429Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2024-06-24T14:01:00.429Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:01:00.851Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 24 Jun 2024 14:01:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:01:00.852Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dollarstoremobile:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-24T14:01:01.838Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 24 Jun 2024 14:01:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=550","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:01:01.838Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2024-06-24T14:01:01.839Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:01:01.840Z] > refreshing access token with scopes: []
+[debug] [2024-06-24T14:01:01.840Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:01:02.324Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 24 Jun 2024 14:01:01 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:01:02.326Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile [none]
+[debug] [2024-06-24T14:01:02.741Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile 401
+[debug] [2024-06-24T14:01:02.742Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-06-24T14:01:02.742Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:01:03.121Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\Kossi Koffi\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project dollarstoremobile. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-06-24T14:07:31.156Z] ----------------------------------------------------------------------
+[debug] [2024-06-24T14:07:31.159Z] Command:       C:\Program Files\nodejs\node.exe C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:dev_deploy
+[debug] [2024-06-24T14:07:31.159Z] CLI Version:   9.23.0
+[debug] [2024-06-24T14:07:31.159Z] Platform:      win32
+[debug] [2024-06-24T14:07:31.159Z] Node Version:  v14.18.1
+[debug] [2024-06-24T14:07:31.159Z] Time:          Mon Jun 24 2024 14:07:31 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-06-24T14:07:31.160Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-24T14:07:31.221Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-24T14:07:31.221Z] > authorizing via signed-in user (zoglikofibenoit@gmail.com)
+[debug] [2024-06-24T14:07:31.222Z] [iam] checking project dollarstoremobile for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-24T14:07:31.223Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2024-06-24T14:07:31.224Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:07:31.617Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 24 Jun 2024 14:07:31 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:07:31.618Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dollarstoremobile:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-24T14:07:32.503Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 24 Jun 2024 14:07:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=543","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:07:32.503Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-06-24T14:07:32.504Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:07:32.506Z] > refreshing access token with scopes: []
+[debug] [2024-06-24T14:07:32.506Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:07:32.869Z] <<< HTTP RESPONSE 400 {"date":"Mon, 24 Jun 2024 14:07:32 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:07:32.872Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile [none]
+[debug] [2024-06-24T14:07:33.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile 401
+[debug] [2024-06-24T14:07:33.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-06-24T14:07:33.257Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:07:33.638Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project dollarstoremobile. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-06-24T14:21:36.926Z] ----------------------------------------------------------------------
+[debug] [2024-06-24T14:21:36.930Z] Command:       C:\Program Files\nodejs\node.exe C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:dev_deploy
+[debug] [2024-06-24T14:21:36.931Z] CLI Version:   9.23.0
+[debug] [2024-06-24T14:21:36.931Z] Platform:      win32
+[debug] [2024-06-24T14:21:36.931Z] Node Version:  v14.18.1
+[debug] [2024-06-24T14:21:36.932Z] Time:          Mon Jun 24 2024 14:21:36 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-06-24T14:21:36.932Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-24T14:21:36.979Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-24T14:21:36.979Z] > authorizing via signed-in user (zoglikofibenoit@gmail.com)
+[debug] [2024-06-24T14:21:36.979Z] [iam] checking project dollarstoremobile for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-24T14:21:36.981Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2024-06-24T14:21:36.981Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:21:37.521Z] <<< HTTP RESPONSE 400 {"date":"Mon, 24 Jun 2024 14:21:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:21:37.522Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dollarstoremobile:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-24T14:21:38.540Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 24 Jun 2024 14:21:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=543","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:21:38.540Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-06-24T14:21:38.544Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:21:38.546Z] > refreshing access token with scopes: []
+[debug] [2024-06-24T14:21:38.546Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-06-24T14:21:38.947Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 24 Jun 2024 14:21:38 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-06-24T14:21:38.949Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile [none]
+[debug] [2024-06-24T14:21:39.369Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile 401
+[debug] [2024-06-24T14:21:39.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dollarstoremobile {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-06-24T14:21:39.369Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-06-24T14:21:39.770Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\laragon\www\MobileDash-benoit\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project dollarstoremobile. Please make sure the project exists and your account has permission to access it.

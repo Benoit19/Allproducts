@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "dollarstoremobile"
+  },
+  "targets": {
+    "dollarstoremobile": {
+      "hosting": {
+        "prod_deploy": [
+          "dollarstore-dashbord"
+        ],
+        "dev_deploy": [
+          "dollarstoremobile"
+        ]
+      }
+    }
+  }
+}

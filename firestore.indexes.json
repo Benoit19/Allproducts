@@ -1,0 +1,677 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "arrival_command",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arrival_command",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ecom_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "issuer.uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "orderedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Categorie",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Categorie.id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Categorie.Id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Categorie.ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Categorie.SubCategorie.ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Categorie.ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Barcode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "SearchKeys",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "SearchKeys",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "IsProductValidated",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Cassablanca",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Barcode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Cassablanca",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Cassablanca",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Barcode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "NewLocalPriceUpdateAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "NewLocalPriceUpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Stock.Dekon",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Stock",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "StockState.Cassablanca.warning",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Barcode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "StockState.Cassablanca.warning",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "StockState.Dekon.warning",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Barcode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "StockState.Dekon.warning",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SaleDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Order.State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order.OrderedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Order.State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Purchaser.Id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order.OrderedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Purchaser.Id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order.OrderedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "PoRef",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Store",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Vendor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Username",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "IsShipped",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "PurchasesItemId",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Store",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Vendor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "StoreName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Username",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Vendor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "purchase_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "VendorName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CreateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "received_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "shipping_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ActivityStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "UpdateAt",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
