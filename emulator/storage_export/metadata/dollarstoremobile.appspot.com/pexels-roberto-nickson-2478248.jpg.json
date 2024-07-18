@@ -1,0 +1,19 @@
+{
+  "name": "pexels-roberto-nickson-2478248.jpg",
+  "bucket": "dollarstoremobile.appspot.com",
+  "contentType": "image/jpeg",
+  "metageneration": 1,
+  "generation": 1639390730403,
+  "storageClass": "STANDARD",
+  "etag": "someETag",
+  "contentDisposition": "inline",
+  "contentEncoding": "identity",
+  "downloadTokens": [
+    "c670ee3d-9be5-4038-8c8c-cef133a58a43"
+  ],
+  "timeCreated": "2021-12-13T10:18:50.402Z",
+  "updated": "2021-12-13T10:18:50.422Z",
+  "size": 2788502,
+  "md5Hash": "VskihHyJofq3dU0SlhSrWg==",
+  "crc32c": "594343183"
+}
